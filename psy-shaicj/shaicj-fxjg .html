@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge chrome=1">
+    <title>心理咨询</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="mask"></div>
+<!--遮罩层-->
+<section class="container p0 tc">
+    <div><img src="images/banner_1.jpg" alt="" class="img-responsive w100"></div>
+
+    <div class="container" style="background-color: #faf4e6;">
+    	<!--奖状-->
+        <div class="jiangz">       	
+            <div class="grxx">
+                <p>陆积极 同学：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;您在2017年5月心理咨询师考试中取得了优异的成绩，在此向您表示祝贺！</p>
+                <p>您的分数如下：</p>
+                <p>基础理论：<i>79</i>分 &nbsp; 技能实操： <i>98</i>分</p>
+                <p>特发此证，以示嘉奖！</p>
+            </div>           
+        </div>
+        <a href="javascript:;" class="fullBtnBlue" onClick="save()"><strong>分享我的成绩</strong></a>
+        <div style="color:#434343; text-align:left; letter-spacing:1px; padding:5px 20px 25px;">分享到朋友圈 > 把【分享后的截图】发到微信公众号(Bikaoti)  回复：“晒成绩”，即可参与活动。</div>
+    </div>
+    <!-- example -->
+  <div class="example">
+      <div class="container p0 list">
+        <p><span>姓名</span><span>考试类别</span><span>理论知识</span><span>操作技能</span></p>
+        <div class="picMarquee-top">
+          <div class="bd">
+            <ul class="picList">
+              <li><i>林xx</i><i>心理咨询师二级</i><i>119</i><i>98</i></li>
+              <li><i>欧阳xx</i><i>心理咨询师三级</i><i>139</i><i>96</i></li>
+              <li><i>陈xx</i><i>心理咨询师三级</i><i>89</i><i>88</i></li>
+              <li><i>马xx</i><i>心理咨询师二级</i><i>109</i><i>95</i></li>
+              <li><i>慕容xx</i><i>心理咨询师二级</i><i>93</i><i>92</i></li>
+            </ul>
+            <a href="javascript:;" class="f16">查看更多>></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!--app下载条--> 
+<footer class="mui-bar mui-bar-footer " id="footer">
+    <div class="mui-row">
+        <div class="col-xs-1 logo"></div>
+        <div class="col-xs-4 wz">
+            <h4 class="f16">毙考题 </h4>
+            <h7 class="f10">专为考试定制</h7>
+        </div>
+        <div class="col-xs-4">
+            <a href="#" onClick="downloadApp()" class="download" id="footerDownload">马上下载</a>
+        </div>
+        <div class="col-xs-1 mui-text-right" style="margin-top: 22px;">
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.jeagine.psy" id="close">×</a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<!-- 地区/考试类别 -->
+<script src="js/mobileSelect.js"></script>
+<script src="js/select.js"></script>
+<script>
+    var index = 1;
+    function save() {
+        $("#error").html("");
+        var nickname = $("#name").val();
+        var zkz = $("#zkz").val();
+        var qq = $("#qq").val();
+        var address = $("#trigger1 span").text();
+        var type = $("#trigger2 span").text();
+        var lilun = $("#lilun").val();
+        var operation = $("#operation").val();
+        if (nickname == "") {
+            $("#error").html("姓名不要为空！");
+            return false;
+        }
+        if (zkz == "") {
+            $("#error").html("请输入准考证！");
+            return false;
+        }
+        if (qq == "") {
+            $("#error").html("请输入qq！");
+            return false;
+        }
+        if (address == "") {
+            $("#error").html("请选择地址！");
+            return false;
+        }
+        if (type == "") {
+            $("#error").html("请选择考试类别！");
+            return false;
+        }
+        if (lilun == "") {
+            $("#error").html("请输入基础理论成绩！");
+            return false;
+        }
+        if (operation == "") {
+            $("#error").html("请输入技能实操成绩！");
+            return false;
+        }
+        if (index != 1) {
+            return false;
+        }
+        index++;
+        // $.post("/api/user/register/message_bespeak_activity", {
+        //     "nickname": nickname
+        //     ,"address": address
+        // }, function (data) {
+        //     console.log(data);
+        //     index = 1;
+        //     if (data.code == 1) {
+        //         $("#name").val("");
+        //         $("#trigger1").html("请选择您的地区：<span style='color:#333'></span>");
+        //         countDown = 0;
+        //         success();
+        //     } else if (data.code == 2) {
+        //         $("#error").html("短信验证码错误！")
+        //     } else if (data.code == 3) {
+        //         $("#error").html("该手机号已经被预约过！")
+        //     }else if (data.code == 0) {
+        //         $("#error").html("系统异常！");
+        //     }
+        // });
+    }
+	
+$(document).ready(function(){
+  $("#close").click(function(){
+  $("#footer").hide();
+  });
+});
+</script>
+</html>

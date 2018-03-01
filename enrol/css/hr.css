@@ -1,0 +1,22 @@
+/*hr*/
+.hr{margin: 20px 0;}
+.hr table{background-color:#F4B800;}
+.hr table th, .hr table td{background-color:#423201;color:#fff;height: 40px;vertical-align: middle;border-left: 1px solid #e3e3e3;font-weight: 500;}
+.hr table th:first-child, .psy table td:first-child{border-left:0}
+.hr table td{background-color:#fff;color:#333;text-align:center;font-size: 14px;border-bottom:1px solid #e3e3e3;line-height: 40px;}
+.hr table tr td:nth-child(3) a{color:#28BBFC}
+.hr table tr td:nth-child(3), .hr table tr.anhui td:nth-child(4){color:#55AB46}
+.hr table tr td:nth-child(4) a, .hr table tr.anhui td:nth-child(5) a{color:#FF806F}
+.note span{background-color: #334056;padding: 3px 7px;color: #fff;font-size: 14px;}
+.pbox, .pbox>div{color:#333}
+.pbox .xia table td{border:1px solid #333;border-right: 0;}
+.pbox{border:1px solid #333;margin-bottom: 20px}
+.pbox .title span{background-color:#3D80EE;color: #fff;border-radius: 20px;}
+.hr table tr.anhui td:nth-child(3){color: #333}
+#footer .logo {
+    background: url(../../../images/app_icon_HR.png) no-repeat;
+    background-size: 40px auto;
+}
+@media (max-width:330px){
+.hr table tr td:nth-child(3), .hr table tr td:nth-child(2){font-size: 10px}
+}

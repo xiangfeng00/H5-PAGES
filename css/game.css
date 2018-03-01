@@ -1,0 +1,39 @@
+body{background:#ffe8c7}
+.rulebtn{position: absolute;right: 7px;width: 40px;height: 46px;}
+.banner p{color: #fff;margin-top: -20%;margin-bottom: 20%;}
+.award{background: url(../images/game_03.jpg) no-repeat;height: 195px;color: #fff;background-size: contain;padding-top: 7%;}
+.award p{border-bottom:1px solid #faa87b;margin: 0 48px 0 48px; height: 32px;line-height: 32px;margin-bottom: 0;}
+.award p:last-child{border-bottom:0}
+.award p span{width:50%;display:inline-block;}
+.award p span:nth-child(2n){text-align: right;}
+.start .row{margin:0;padding:0 20px}
+.start .col-xs-6{display:inline-block;width:50%;color:#4f4f4f;font-size:14px;}
+.start .col-xs-6 span{color:#ff0000;font-size:16px}
+.start a{display:block;background:url(../images/game_06.jpg) no-repeat;height:90px;background-size:100% auto;margin-top:10px;line-height: 65px;text-align:center;color:#fff;font-size:20px;letter-spacing:2px;}
+.ranking{background-color:#fff;padding-top:10px;}
+.ranking h4 span{color: #4f4f4f;font-size:16px;font-weight:normal}
+.ranking .list div span, .ranking h4 span{display:inline-block;width: 21.3333%;text-align: center;height: 50px;line-height: 50px;color: #828282;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.ranking .list div span:nth-child(2),.ranking h4 span:nth-child(2){width:30%}
+.ranking .list div,.ranking h4{margin: 0 20px;border-top: 1px solid #eaeaea;}
+.ranking .list div span:first-child{color:#4f4f4f}
+.ranking .list div.top span:first-child{background: url(../images/game_12.jpg) no-repeat center top;height: 50px;background-size: 50px;position: relative;top: 7px;text-indent: 1px;}
+.ranking .list div.second span:first-child{background: url(../images/game_15.jpg) no-repeat center top;height: 50px;background-size: 50px;position: relative;top: 7px;text-indent: 2px;line-height: 52px;}
+.ranking .list div.third span:first-child{background: url(../images/game_18.jpg) no-repeat center top;height: 50px;background-size: 50px;position: relative;top: 7px;line-height: 52px;text-indent: 1px;}
+.mask{display: none;position: fixed; top: 0; left: 0; bottom: 0; right: 0; background: #eee; background: rgba(0, 0, 0, 0.7); z-index: 888; }
+.kua{position:fixed;z-index:999;display: none;}
+.kua .top{width: 84.3%;margin:auto;}
+.kua .middle{background-color: #ff8349;width: 80%;margin:auto;padding: 0 0 15px 0;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+.kua .content{margin:0 15px;background-color:#fffde4;padding: 16px 18px;border-radius: 8px;border-bottom: 4px solid #c85f3a;color: #63401e;}
+.kua .content p{margin-bottom:3px;line-height:22px;font-size: 13px;}
+.kua a.close{display:block;background-color:#f5c621;height: 45px;line-height: 45px;border-bottom:3px solid #d79116;border-radius: 19px;color:#63401e;margin-top:16px;}
+.canceltip .row, .nofreetime .row{margin: 0;}
+.canceltip div.tc, .nocoin div.tc, .nofreetime div.tc{margin-top: 10px;}
+.nocoin div.tc,{margin-bottom: 24px;}
+.canceltip div.tc p, .nocoin div.tc p, .nofreetime div.tc p{font-size:14px;}
+.canceltip .col-xs-6, .nofreetime .col-xs-6{padding-right:0;}
+.canceltip a, .nofreetime a{display:block;margin-top: 20px;height:40px;line-height:40px;border-radius:18px;}
+.canceltip a.cancel, .nofreetime a.cancel{background-color:#f5c621;border-bottom:3px solid #d79116;color: #63401e;}
+.canceltip a.sure, .nofreetime a.sure{ background-color:#fe7747;border-bottom: 3px solid #ab4e0f;color: #fff;}
+@media (max-width:330px){.award{height:180px;}.award p{height:29px;line-height:29px;}.award p span{font-size:12px;}.start .col-xs-6{font-size: 12px;padding: 0;}.ph{height: 53px}}
+@media (min-width:414px){.award p{height:37px;line-height:37px;}.start a{line-height: 76px}}
+@media (min-width:760px){.award{background: url(../images/pad_pro.jpg) no-repeat;height:325px;width:720px} .award p{display:none;}}

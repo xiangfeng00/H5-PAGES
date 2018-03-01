@@ -1,0 +1,41 @@
+body{background:#6698FF;background: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(110, 103, 241)), to(#6698FF));}
+.main{background-color:#90B1FD;border-radius:5px;position: relative;padding: 0 15px 01px;}
+.titles{background:url(../images/title_03.png) no-repeat center;height:80px;background-size: 310px auto;color: #fff;line-height: 80px;top: -40px;position: relative;margin-bottom: -20px;}
+.box{background-color:#fff;padding: 16px 10px;border:2px solid #2672FB;border-bottom:8px solid #2672FB;border-radius:5px;margin-bottom: 13px;}
+.box>div{padding: 22px 0 15px;border-bottom:1px solid #dedede;text-align: center;}
+ span.tc{background-color: #2672FB;color: #fff;padding: 3px 15px;border-radius: 20px;display: block;width: 180px;margin: auto;margin-top: -33px;font-size: 18px;}
+.box img{display:inline;width: 19%;margin-top: -9px;margin-right: 5px;}
+.box span.name{background-color:#9a9a9a;color:#fff;padding:2px 8px;margin-right:5px;border-radius:3px;vertical-align: text-bottom;width: 58px;display: inline-block;text-align: center;}
+.box>div:nth-child(3){border:0;padding-bottom:0}
+.box>div:nth-child(3) span{color:#FF3C65}
+.box>div:nth-child(3) .name{background-color:#FF3C65;color:#fff}
+.box span em{color:#666;padding-left:10px}
+.newPrice ul{margin-bottom:30px}
+.newPrice ul li{color:#586AB0;}
+.newPrice ul li h3{
+    display: inline-block;
+    color: rgb(76, 101, 196);
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(86, 113, 218)), to(rgb(50, 60, 99)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+    }
+.newPrice ul li h3 span{
+    display:inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 6px;
+    border-radius: 100%;
+    background:#FFE305; /* 一些不支持背景渐变的浏览器 */
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFE305), to(#FEC72E));
+    vertical-align: unset;
+    }
+.fuli{color:#313A67;font-size:13px;line-height:22px;padding: 10px 5px 0;margin-bottom: 0;}
+.dis{color:#fff;padding-top: 10px;}
+@media (max-width:330px){
+.titles{background:url(../images/title_03.png) no-repeat center;height:80px;background-size: 270px auto;}
+span.tc{font-size:18px}
+b.f20{font-size:18px}
+.box span.name{font-size:12px;width:54px}
+.box span em{font-size:10px}
+}

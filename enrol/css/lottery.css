@@ -1,0 +1,62 @@
+body{background-color: #F5495C}
+.mask{display: none; background: #0c0c0c; filter: Alpha(Opacity=10, Style=0); opacity: 0.7; position: absolute; height: 260%; width: 100%; z-index: 99;}
+.currentcoin{position: relative;background: rgba(255, 255, 255, 0.26);width: 95%;margin: auto;height: 30px;line-height: 30px;bottom: 50px;border-radius: 20px;color: #fff;}
+.currentcoin span{width: 50%;display:inline-block;}
+.currentcoin span:nth-child(1){border-right:1px solid rgba(255, 255, 255, 0.38);padding-right:10px;}
+/*lottery*/
+.lottery{background-color:#00CFF9;background-color: #00cff9;margin-top: -50px;padding-bottom:30px}
+.lottery .container{padding: 0 20px}
+.lottery .col-xs-4{padding: 0;margin-bottom: 10px;}
+#prize{padding-top: 40px;}
+#prize li{display:block;height: 120px;line-height:110px;text-align:center;color:#fff;cursor:pointer;list-style-type: none;background: url(../images/back.png) no-repeat center;background-size:contain;}
+#prize li p{margin:0;height: 20px;}
+#prize img{margin:auto;width: 110px;}
+#prize #r{background:url(../images/r.png) no-repeat center;background-size: contain;}
+.lottery .col-xs-6:nth-child(odd){padding-right:8px}
+.lottery .col-xs-6:nth-child(even){padding-left:8px}
+.lottery .col-xs-6 a{background:#009FCB;display:block;height:35px;line-height:35px;color:#fff;margin:15px 0 3px;border-radius:20px;font-size:15px;}
+#repeat{background:#FFD800;color:#333}
+/*shuoming*/
+.notes{color:white;line-height:20px;margin-bottom:110px}
+.notes h3{border-bottom:1px solid #fff;margin-bottom:30px}
+.notes h3 span{background:#F5495C;position:relative;top:8px;padding:0 10px;}
+.notes em{width:3%}
+.notes span{width:95%}
+.notes p.tc{color:#e4e4e4}
+@media (max-width:330px){#prize li{height: 100px;line-height: 90px;}
+@media (max-width:330px){#prize img{width:90px}}
+#prize li p,.currentcoin span,.notes{font-size:12px}}
+/*tanchuang*/
+#viewother, .noprize{background-image: url(../images/tc_bj1.png); background-repeat: no-repeat; background-position: center top; background-size: 100%; display: block; height: 331px; float: left; width: 300px; position: fixed; left: 50%; top: 50%; margin-top: -145px; margin-left: -150px; text-align:center; z-index: 9999999;}
+.noprize{background:url(../images/cz.png) no-repeat center top; background-size: 100%;}
+.noprize a.again{padding: 8px 48px; border-radius: 50px; background-color: #ffd800; color: #3a3a3a; font-size: 18px; text-decoration: none;}
+.noprize span{color:#ff2c6e; font-size:20px; padding-bottom:70px; display:inline-block;}
+#viewother h2 ,.wdjp h2 , .czxjb h2, .noprize h2, .buycoin h2{font-size: 34px; color: #ff2c6e; width: 100%; display: inline-block; margin-top: 70px; margin-bottom: 15px; letter-spacing: 3px; font-weight:bold;}
+.noprize h2{margin-left: 10px;}
+#viewother span , .wdjp span{display:inline-block; padding: 4px 30px; background-color:rgba(255,255,255,0.5); color:#5f5f5f; border-radius:30px; font-size:16px;}
+#viewother p{color:#4b4b4b; font-size:15px; display:inline-block; text-align: left; padding: 10px 10%; margin-top: 30px; width:80%;}
+.wdjp{background-image: url(../images/tc_bj2.png); background-repeat: no-repeat; background-position: center top; background-size: 100%; display: block; float: left; width: 300px; max-height: 350px; position: fixed; left: 50%; top: 50%; margin-top: -200px; margin-left: -150px; text-align: center; z-index: 99;}
+.wdjp h2{margin-top:10px; letter-spacing: 0px; font-size: 28px;}
+.wdjp span{margin-bottom: 15px;}
+.wdjp-list{width:100%; max-height:198px; border-bottom: 1px solid #e1e1e1; padding: 20px 0; background-color:#fff;}
+.wdjp ul{margin: 0px; padding: 0 8%; list-style-type: none; display: inline-block; width: 100%; max-height:198px; overflow:auto;}
+.wdjp li{line-height: 32px; float: left; width: 100%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #e1e1e1; text-align: left; color:#4b4b4b; font-size:14px;}
+.wdjp li i{display:inline-block; border: 1px solid #b2b0b0; border-radius:10px; padding:3px; margin:0 5px;}
+.wdjp li p{padding:0; margin:0; display: inline-block;}
+.wdjp li span{padding:0; margin:0; float:right; font-size:14px; padding-right:10px;}
+.wdjp h3{background-color:#fff; font-size:14px; font-weight:normal; /* width:88%; */ margin:0; text-align:left; color: #6f6f6f; padding: 10px 6%; border-radius:0 0 10px 10px;}
+.wdjp .close , .czxjb .close, .czxjb .close, .noprize .close, .buycoin .close, .expire .close{background-image: url(../images/tb_close.png); background-repeat: no-repeat; background-position: center top; background-size: 100%; display:inline-block; padding:20px; margin-top:20px;}
+.noprize .close{padding:18px;margin-top:48px}
+.czxjb, .buycoin{background-image: url(../images/tc_bj3.png); background-repeat: no-repeat; background-position: center top; background-size: 100%; display: none; float: left; width: 300px; max-height: 350px; position: fixed; left: 50%; top: 40%; margin-top: -140px; margin-left: -150px; text-align: center; z-index: 99;}
+.expire{display:none; border-radius:8px; padding:50px 0 30px; float: left; width: 300px; max-height: 350px; position: fixed; left: 50%; top: 40%; margin-top: -150px; margin-left: -150px; text-align: center; z-index: 99;}
+.czxjb h2, .buycoin h2{font-size: 26px; margin-bottom: 10px; text-indent: 5%;}
+.expire h2, .expire span, .expire p{background:#fff;display:block;width:100%;}
+.expire h2{margin-bottom:0;padding:55px 0 10px 0; border-top-left-radius:8px;border-top-right-radius:8px;font-size:24px}
+.expire p{margin-bottom:0;padding-bottom:30px; padding-top:20px;}
+.expire p:nth-child(3){border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+.expire span{font-size:18px;padding:0 0 30px}
+.czxjb span, .buycoin span{color:#ff2c6e; font-size:18px; padding-bottom:32px; display:inline-block;}
+.expire span{color:#333}
+.czxjb p, .buycoin p{padding: 40px 8%; background-color:#fff; border-radius:0 0 10px 10px; margin: 0;}
+.czxjb p a,.expire p a.sure{padding: 8px 70px; border-radius: 50px; background-color: #ffd800; color: #3a3a3a; font-size: 18px; text-decoration: none;}
+.czxjb em, .buycoin em{color:#E54870}

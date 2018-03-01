@@ -1,0 +1,27 @@
+/*teacher*/
+body{background-color:#2AC4F1;}
+.teacher{margin: 20px 0;}
+.teacher table{background-color:#F4B800;}
+.teacher table th, .teacher table td{background-color:#0080BC;color:#fff;height: 40px;vertical-align: middle;border-left: 1px solid #e3e3e3;font-weight: 500;}
+.teacher table th:first-child, .psy table td:first-child{border-left:0}
+.teacher table td{background-color:#fff;color:#333;text-align:center;font-size: 14px;border-bottom:1px solid #e3e3e3;line-height: 40px;}
+.teacher table tr td:nth-child(3) a{color:#28BBFC}
+.teacher table tr td:nth-child(3){color:#A4A4A4}
+.teacher table tr td:nth-child(4) a{color:#FF806F}
+.huod{background-color: #009DCB;margin: 30px 0 0 0;padding-bottom: 70px;}
+.img-share{background: url(../images/teacher_04.jpg) no-repeat center;height:200px;background-size:90%;}
+h3.title{color:#fff;font-size:14px;letter-spacing: 1px;padding-top: 20px;margin: 0;}
+a.share{background-color:#21B2F8;color:#fff;margin: 0 auto;text-align:center;display: block;width: 88px;height: 30px;line-height: 30px;border-radius: 5px;top: 60%;position: relative;/* display: inline-flex; */}
+#footer .logo {background: url(../../../images/app_icon_TQ.png) no-repeat;background-size: 40px auto;}
+@media (max-width:330px){
+.teacher table tr td:nth-child(3), .teacher table tr td:nth-child(2){font-size: 10px}
+}
+.ggao{color:#fff;font-size:13px;}
+.ggao>div{display:none;}
+#backtop{background-color:#4a4a4a;width: 100px;height:30px;line-height: 30px;text-align: center;color: #fff;border-radius: 5px;margin: auto;margin-top: 20px;}
+#backtop a{color: #fff;}
+.ggao .title {border-bottom:1px solid #008FCB;margin-bottom:26px}
+.ggao .title span{display:inline-block;position:relative;background-color:#008FCB;padding:5px 15px;font-size:14px;color:#fff;top:13px}
+.ggao p{line-height:20px}
+#footer,#share,#app-fx,#luody{display:none;}
+.huod div { padding:10px 5%;}
